@@ -1,7 +1,7 @@
 from pydca.fasta_reader import fasta_reader
 from . import scoring_matrix
 from Bio import pairwise2
-from Bio.SubsMat.MatrixInfo import blosum62
+from Bio.Align import substitution_matrices
 import logging
 import os
 
@@ -208,7 +208,7 @@ class SequenceBackmapper:
             GAP_OPEN_PEN = -8
             GAP_EXTEND_PEN = 0
         elif self.__biomolecule == 'PROTEIN':
-            scoring_mat = blosum62
+            scoring_mat = substitution_matrices.load("BLOSUM62")
             GAP_OPEN_PEN = -10
             GAP_EXTEND_PEN = -1
         else:

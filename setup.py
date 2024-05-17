@@ -5,12 +5,12 @@ with open("README.md") as fh:
     long_description = fh.read()
 
 requirements = [
-    "scipy==1.3.1",
-    "biopython==1.74",
-    "numpy>=1.13.3, <=1.15.4",
-    'llvmlite==0.30.0',
-    "numba==0.46.0",
-    "matplotlib==3.0.0",
+    "scipy",
+    "biopython",
+    "numpy",
+    'llvmlite',
+    "numba",
+    "matplotlib",
     "requests>=2.22.0",
 ]
 
@@ -39,7 +39,7 @@ setup(
     version="1.23",
     author="Mehari B. Zerihun",
     author_email="mbzerihun@gmail.com",
-    python_requires=">=3.5",
+    python_requires=">=3.10",
     description="Direct couplings analysis (DCA) for protein and RNA sequences",
     long_description=long_description,
     long_description_content_type="text/markdown",

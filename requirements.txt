@@ -1,5 +1,6 @@
 scipy
 biopython
+numpy
 llvmlite
 numba
 matplotlib
